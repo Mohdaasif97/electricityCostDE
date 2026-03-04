@@ -241,10 +241,11 @@ export default function Home() {
                 <div className={styles.form}>
                   {/* Preset */}
                   <div className={styles.fieldGroup}>
-                    <label className={styles.label}>
+                    <label className={styles.label} htmlFor="geraet">
                       Gerät auswählen (optional)
                     </label>
                     <select
+                      id="geraet"
                       className={styles.select}
                       value={preset}
                       onChange={handlePreset}
