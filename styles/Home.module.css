@@ -48,7 +48,7 @@
 }
 
 .logoText span {
-  color: #f5a623;
+  color: #b87a00;
 }
 
 .nav {
@@ -172,7 +172,7 @@
 }
 
 .calcSubtitle {
-  color: #777;
+  color: #595959;
   font-size: 0.95rem;
   margin-bottom: 28px;
 }
@@ -200,7 +200,7 @@
 }
 
 .hint {
-  color: #aaa;
+  color: #767676;
   font-size: 0.9rem;
   cursor: help;
 }
@@ -241,7 +241,7 @@
   right: 14px;
   font-size: 0.8rem;
   font-weight: 700;
-  color: #aaa;
+  color: #767676;
   pointer-events: none;
 }
 
@@ -361,7 +361,7 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: #888;
+  color: #595959;
 }
 
 .resultKwh {
@@ -373,13 +373,13 @@
 .resultCost {
   font-size: 1.4rem;
   font-weight: 800;
-  color: #f5a623;
+  color: #b87a00;
 }
 
 .resultNote {
   margin-top: 12px;
   font-size: 0.82rem;
-  color: #aaa;
+  color: #767676;
   text-align: center;
 }
 
@@ -556,7 +556,7 @@
 .tableNote {
   margin-top: 14px;
   font-size: 0.82rem !important;
-  color: #999 !important;
+  color: #767676 !important;
 }
 
 /* ========================
@@ -593,20 +593,20 @@
 .infoBox h3 {
   font-size: 0.9rem;
   font-weight: 700;
-  color: #555;
+  color: #444;
   margin-bottom: 8px;
 }
 
 .infoBoxValue {
   font-size: 1.8rem;
   font-weight: 800;
-  color: #f5a623;
+  color: #b87a00;
   margin-bottom: 8px;
 }
 
 .infoBox p {
   font-size: 0.85rem;
-  color: #777;
+  color: #595959;
   margin: 0;
   line-height: 1.5;
 }
@@ -686,7 +686,7 @@
 .footer {
   background: #1a1d2e;
   padding: 48px 0 28px;
-  color: rgba(255,255,255,0.7);
+  color: rgba(255,255,255,0.87);
 }
 
 .footerInner {
@@ -722,7 +722,7 @@
 }
 
 .footerLinks a {
-  color: rgba(255,255,255,0.6);
+  color: rgba(255,255,255,0.8);
   text-decoration: none;
   font-size: 0.88rem;
   transition: color 0.2s;
@@ -734,7 +734,7 @@
 
 .footerDisclaimer {
   font-size: 0.78rem;
-  color: rgba(255,255,255,0.35);
+  color: rgba(255,255,255,0.6);
   border-top: 1px solid rgba(255,255,255,0.1);
   padding-top: 20px;
   line-height: 1.6;
@@ -845,7 +845,7 @@
 
 .subtitle {
   text-align: center;
-  color: #666;
+  color: #444;
   font-size: 1.1rem;
   margin-bottom: 40px;
 }
