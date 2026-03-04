@@ -48,7 +48,7 @@
 }
 
 .logoText span {
-  color: #b87a00;
+  color: #8a6000;
 }
 
 .nav {
@@ -241,7 +241,7 @@
   right: 14px;
   font-size: 0.8rem;
   font-weight: 700;
-  color: #767676;
+  color: #636363;
   pointer-events: none;
 }
 
@@ -373,7 +373,7 @@
 .resultCost {
   font-size: 1.4rem;
   font-weight: 800;
-  color: #b87a00;
+  color: #8a6000;
 }
 
 .resultNote {
@@ -600,7 +600,7 @@
 .infoBoxValue {
   font-size: 1.8rem;
   font-weight: 800;
-  color: #b87a00;
+  color: #8a6000;
   margin-bottom: 8px;
 }
 
