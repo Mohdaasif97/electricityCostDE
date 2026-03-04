@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.stromkostenrechner9.de/sitemap.xml

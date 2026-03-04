@@ -1,0 +1,35 @@
+# Llms.txt - LLM Crawler Guidelines
+
+## Site Information
+- **Name**: Stromkostenrechner
+- **URL**: https://www.stromkostenrechner9.de/
+- **Language**: German (Deutsch)
+- **Description**: Free online electricity cost calculator for Germany. Calculate electricity consumption in kWh and costs per day, week, month, and year for all household devices.
+
+## Purpose
+This website provides a free, user-friendly tool to calculate electricity costs and energy consumption for household appliances. Users can input device specifications (wattage, hours per day, days per week) and current electricity rates to get accurate cost estimates.
+
+## Key Features
+- Calculate electricity consumption in kWh
+- Estimate costs per day, week, month, and year
+- Preset calculations for common household appliances (refrigerator, washing machine, dishwasher, etc.)
+- Custom device calculations
+- Real-time electricity price updates for Germany (2026 rates)
+
+## Content Guidelines
+- Content is primarily in German (de-DE)
+- Focus on practical energy consumption calculations
+- Includes FAQs about electricity costs and consumption patterns
+- Contains schema.org structured data for search engine optimization
+
+## Accessibility
+- Fully responsive design for desktop and mobile
+- Keyboard accessible calculator interface
+- Clear input fields and result displays
+- Multiple calculation options
+
+## Pages
+- **Home Page** (`/`): Main calculator and educational content about electricity costs
+
+## No Restrictions
+All content on this website is available for LLM processing and training. No sensitive data is present.

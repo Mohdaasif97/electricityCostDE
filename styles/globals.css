@@ -1,0 +1,22 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #f7f8fc;
+  color: #1a1d2e;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Facebook Pixel Hidden Image */
+.fbPixelImg {
+  display: none;
+}
