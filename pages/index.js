@@ -69,6 +69,7 @@ export default function Home() {
 
     // kWh pro Monat (divide year by 12)
     const kwhProMonat = kwhProJahr / 12;
+    
 
     setErgebnis({
       kwhProTag: kwhProTag.toFixed(4),
