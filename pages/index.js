@@ -26,7 +26,7 @@ const GERAETE_PRESETS = [
   { name: 'Eigenes Gerät', watt: '', stunden: '', tage: 7 },
 ];
 
-const DEFAULT_STROMPREIS = 0.32; // €/kWh Durchschnitt Deutschland 2026
+const DEFAULT_STROMPREIS = 0.32;
 
 export default function Home() {
   const [watt, setWatt] = useState('');
@@ -58,18 +58,10 @@ export default function Home() {
       return;
     }
 
-    // kWh pro Tag
     const kwhProTag = (w * h) / 1000;
-
-    // kWh pro Woche
     const kwhProWoche = kwhProTag * t;
-
-    // kWh pro Jahr (more precise)
     const kwhProJahr = kwhProTag * t * (365 / 7);
-
-    // kWh pro Monat (divide year by 12)
     const kwhProMonat = kwhProJahr / 12;
-    
 
     setErgebnis({
       kwhProTag: kwhProTag.toFixed(4),
@@ -155,9 +147,9 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Ihren Stromverbrauch & Kosten berechnen – Stromkostenrechner</title>
+        <title>Stromkostenrechner 2026 – Stromkosten berechnen | kWh Rechner</title>
         <meta name="description" content="Stromverbrauch und Kosten berechnen – kostenlos! Berechnen Sie ihren Stromverbrauch in kWh pro Tag, Monat und Jahr für alle Haushaltsgeräte." />
-        <meta name="keywords" content="stromkostenrechner, stromverbrauch berechnen, stromkosten berechnen, kWh rechner, stromkosten pro monat, stromkosten pro jahr, strom kosten berechnen, stromrechner, kilowattstunden berechnen, elektrizitätskosten rechner, energiekosten rechner" />
+        <meta name="keywords" content="stromkostenrechner, stromverbrauch berechnen, stromkosten berechnen, kWh rechner, kwh kosten rechner, kwh preis rechner, kwh in euro rechner, stromkosten pro monat, stromkosten pro jahr, strom kosten berechnen, stromrechner, kilowattstunden berechnen, elektrizitätskosten rechner, energiekosten rechner, 300 kwh kosten, 500 kwh strom kosten, 2000 kwh kosten, 4000 kwh strom kosten" />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Stromkostenrechner.de" />
         <meta name="language" content="de" />
@@ -165,36 +157,32 @@ export default function Home() {
 
         <link rel="icon" href="/favicon.ico" />
 
-        {/* Open Graph */}
-        <meta property="og:title" content="Ihren Stromverbrauch & Kosten berechnen – Stromkostenrechner" />
+        <meta property="og:title" content="Stromkostenrechner 2026 – Stromkosten berechnen" />
         <meta property="og:description" content="Kostenloser Stromkostenrechner: Berechnen Sie Ihren Stromverbrauch und Ihre Stromkosten pro Tag, Monat und Jahr für jedes Haushaltsgerät." />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="de_DE" />
         <meta property="og:url" content="https://www.stromkostenrechner9.de/" />
 
-        {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Ihren Stromverbrauch & Kosten – Jetzt berechnen!" />
+        <meta name="twitter:title" content="Stromkostenrechner 2026 – Stromkosten berechnen!" />
         <meta name="twitter:description" content="Kostenloser Online-Stromkostenrechner für Deutschland 2026. Stromverbrauch in kWh & Kosten sofort berechnen." />
 
-        {/* Schema.org */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaOrgData) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="utf-8" />
-       <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
-  rel="preload"
-  as="style"
-  href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
-  onLoad={(e) => { e.currentTarget.rel = 'stylesheet' }}
-/>
-<noscript>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-</noscript>
-  
+          rel="preload"
+          as="style"
+          href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+          onLoad={(e) => { e.currentTarget.rel = 'stylesheet' }}
+        />
+        <noscript>
+          <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+        </noscript>
       </Head>
 
       <div className={styles.page}>
@@ -217,8 +205,9 @@ export default function Home() {
           {/* Hero */}
           <section className={styles.hero}>
             <div className={styles.heroContent}>
+              {/* CHANGE 1: Added "Stromkosten berechnen" to H1 */}
               <h1 className={styles.h1}>
-                Stromkostenrechner 2026
+                Stromkostenrechner 2026 – Stromkosten berechnen
               </h1>
               <p className={styles.heroSubtitle}>
                 Berechnen Sie Ihren <strong>Stromverbrauch</strong> und Ihre <strong>Stromkosten</strong> pro Tag, Monat und Jahr — kostenlos und sofort.
@@ -235,7 +224,8 @@ export default function Home() {
           <section id="rechner" className={styles.calcSection}>
             <div className={styles.container}>
               <div className={styles.calcCard}>
-                <h2 className={styles.calcTitle}>Stromkosten berechnen</h2>
+                {/* CHANGE 2: Added "kWh Rechner & kWh Kosten Rechner" to calculator H2 */}
+                <h2 className={styles.calcTitle}>Stromkosten berechnen – kWh Rechner & kWh Kosten Rechner</h2>
                 <p className={styles.calcSubtitle}>Gerät auswählen oder eigene Werte eingeben</p>
 
                 <div className={styles.form}>
@@ -258,7 +248,6 @@ export default function Home() {
                   </div>
 
                   <div className={styles.inputRow}>
-                    {/* Watt */}
                     <div className={styles.fieldGroup}>
                       <label className={styles.label} htmlFor="watt">
                         Leistung (Watt)
@@ -279,7 +268,6 @@ export default function Home() {
                       </div>
                     </div>
 
-                    {/* Stunden */}
                     <div className={styles.fieldGroup}>
                       <label className={styles.label} htmlFor="stunden">
                         Betrieb pro Tag (Stunden)
@@ -303,7 +291,6 @@ export default function Home() {
                   </div>
 
                   <div className={styles.inputRow}>
-                    {/* Tage pro Woche */}
                     <div className={styles.fieldGroup}>
                       <label className={styles.label} htmlFor="tage">
                         Betriebstage pro Woche
@@ -324,7 +311,6 @@ export default function Home() {
                       </div>
                     </div>
 
-                    {/* Strompreis */}
                     <div className={styles.fieldGroup}>
                       <label className={styles.label} htmlFor="strompreis">
                         Strompreis (€/kWh)
@@ -406,7 +392,7 @@ export default function Home() {
 
                 <h2>Wie funktioniert die Berechnung der Stromkosten?</h2>
                 <p>
-                  Die <strong>Berechnung der Stromkosten</strong> folgt einer einfachen Formel: Zunächst wird der <strong>Stromverbrauch in kWh</strong> berechnet, indem die Wattzahl des Gerätes mit der täglichen Betriebsdauer in Stunden multipliziert und durch 1.000 geteilt wird. Dies ergibt den <strong>Verbrauch pro Tag in Kilowattstunden</strong>. Anschließend wird dieser Tageswert mit der Anzahl der Betriebstage pro Woche multipliziert, um den <strong>Wochenverbrauch</strong> zu ermitteln. Für den <strong>Monatsverbrauch</strong> wird der Wochenwert mit dem Faktor 4,345 (entspricht 365/12/7) multipliziert — dieser Wert berücksichtigt, dass ein Monat im Durchschnitt mehr als vier Wochen hat. Den <strong>Jahresverbrauch in kWh</strong> erhalten Sie durch Multiplikation des Wochenwertes mit 52.
+                  Die <strong>Berechnung der Stromkosten</strong> folgt einer einfachen Formel: Zunächst wird der <strong>Stromverbrauch in kWh</strong> berechnet, indem die Wattzahl des Gerätes mit der täglichen Betriebsdauer in Stunden multipliziert und durch 1.000 geteilt wird. Dies ergibt den <strong>Verbrauch pro Tag in Kilowattstunden</strong>. Anschließend wird dieser Tageswert mit der Anzahl der Betriebstage pro Woche multipliziert, um den <strong>Wochenverbrauch</strong> zu ermitteln. Für den <strong>Monatsverbrauch</strong> wird der Wochenwert mit dem Faktor 4,345 multipliziert. Den <strong>Jahresverbrauch in kWh</strong> erhalten Sie durch Multiplikation des Wochenwertes mit 52.
                 </p>
                 <p>
                   Die Formel im Überblick:<br />
@@ -414,7 +400,8 @@ export default function Home() {
                   <strong>kWh/Woche = kWh/Tag × Tage/Woche</strong><br />
                   <strong>kWh/Monat = kWh/Woche × 4,345</strong><br />
                   <strong>kWh/Jahr = kWh/Woche × 52</strong><br />
-                  <strong>Kosten = kWh × Strompreis (€/kWh)</strong>
+                  {/* CHANGE 3: Added "kWh Preis Rechner & kWh in Euro Rechner" naturally */}
+                  <strong>Kosten = kWh × Strompreis (€/kWh) – unser kWh Preis Rechner wandelt kWh in Euro Rechner um</strong>
                 </p>
 
                 <h3>Beispiel: Stromkosten Kühlschrank berechnen</h3>
@@ -563,6 +550,16 @@ export default function Home() {
                   <p>entspricht ca. <strong>1.440 € pro Jahr</strong> bei 0,32 €/kWh</p>
                 </div>
               </div>
+
+              {/* CHANGE 4: Added kWh cost overview for specific amounts */}
+              <h3>Stromkosten nach Verbrauch – Übersicht</h3>
+              <p>
+                <strong>300 kWh Kosten:</strong> ca. 96 € &nbsp;·&nbsp;
+                <strong>500 kWh Strom Kosten:</strong> ca. 160 € &nbsp;·&nbsp;
+                <strong>2.000 kWh Kosten:</strong> ca. 640 € &nbsp;·&nbsp;
+                <strong>4.000 kWh Strom Kosten:</strong> ca. 1.280 €
+                &nbsp;(bei 0,32 €/kWh)
+              </p>
             </div>
           </section>
 
